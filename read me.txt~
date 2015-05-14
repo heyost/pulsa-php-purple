@@ -1,0 +1,13 @@
+KONFIGURASI XAMPP SEBELUM INSTALASI APLIKASI INI
+	1. copy file php_curl.dll ke folder ..Xampp/lib/php/extensions/no-debug-non-zts-20090626 atau folder no-debug-non-zts-20090626 dapat berubah-ubah pokonya folder yang di dalam folder extensions.
+	2. edit file php.ini di folder ..Xampp/etc yaitu pada baris ke 952 yang awalnya ;extension=php_curl.dll menjadi extension=php_curl.dll (dihilangkan tanda titikkoma ';'). 
+
+
+UNTUK MENGGUNAKAN APLIKASI INI ADA BEBERAPA HAL YANG HARUS DIKONFIGURASI ULANG
+	1. bikin database dengan nama 'mostryahoo' (tanpa tanda kutip).
+	2. import table structure dari file mostryahoo.sql dengan phpmyadmin di localhost setelah mengaktifkan database mostryahoo.
+	3. buat akun untuk login di table users dengan meng-insert pada table tersebut.
+	4. edit file main.php untuk menambahkan kode provider atau nominal provider kira-kira pada baris 104 & 119.
+	5. edit file send_message_to_yahoo_messenger.php untuk user_id yahoo anda dan password yahoo anda pada baris 51 & 52 dan juga user_id penerima/server yahoo pulsa pada baris 97.
+
+
